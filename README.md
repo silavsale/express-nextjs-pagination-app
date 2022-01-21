@@ -17,7 +17,6 @@
     }
 
 </style>
-
 <article class="markdown-body">
 <h1 align="center">[ Full Stack App ]</h1>
 

@@ -1,21 +1,4 @@
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="github-markdown.css">
-<style>
-	.markdown-body {
-		box-sizing: border-box;
-		min-width: 200px;
-		max-width: 980px;
-		padding: 45px; 
-		margin: 0 auto;
-	color: white;
-	}
-	.footer{
-	color: white;
-	}
-	.footer span{
-	color: #24C183;
-	}
-</style>
+
 <article class="markdown-body">
 <h1 align="center">[ Full Stack App ]</h1>
 <h3 align="center">[ Back End ]</h3>

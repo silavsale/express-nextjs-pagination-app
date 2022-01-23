@@ -1,20 +1,29 @@
 import useSWR from "swr"
 import { MdChevronLeft, MdChevronRight } from "react-icons/md"
 const fetcher = (url) => fetch(url).then((res) => res.json())
-import React, { useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 
 function ListUsers() {
   const [page, setPage] = useState(1)
   const [userPerPage, setUserPerPage] = useState(5)
+  const inputElement = useRef(null)
+
+  useEffect(() => {
+    if (inputElement.current) {
+      inputElement.current.focus()
+    }
+  }, [])
+
   const { data, error } = useSWR(
     `http://localhost:3001/users?page=${page}&userPerPage=${userPerPage}`,
     fetcher
   )
 
-  //   console.log(data.length / userPerPage)
+  console.log(data)
 
   const onPageChangeHandler = (event) => {
     setPage(event.target.value)
+    // setEditing(inputRef)
   }
 
   const onUserChangeHandler = (event) => {
@@ -47,6 +56,7 @@ function ListUsers() {
           <input
             type="text"
             name="page"
+            ref={inputElement}
             onChange={onPageChangeHandler}
             value={page}
           />

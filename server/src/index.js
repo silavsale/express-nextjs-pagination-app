@@ -10,6 +10,7 @@ app.use(cors())
 app.get("/users", (req, res) => {
   let page = req.query.page
   // page = page - 1
+  console.log(users)
   const userPerPage = req.query.userPerPage
   console.log("page", page)
   console.log("userPerPage", userPerPage)

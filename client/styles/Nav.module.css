@@ -1,0 +1,32 @@
+.nav-container {
+  position: fixed;
+  width: 100%;
+  background-color: #3a5c97;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  color: #f5f5f5;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #6784fb;
+  color: #f1c232;
+  margin-left: 60px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  padding-right: 20px;
+}
+
+.nav-link {
+  /* background-color: olive; */
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  /* flex: 11; */
+  /* gap: 30px; */
+}

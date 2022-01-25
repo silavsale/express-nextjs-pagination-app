@@ -5,7 +5,7 @@ function ActiveLink({ children, href }) {
   console.log(router.asPath)
   const style = {
     marginRight: 10,
-    color: router.asPath === href ? "#6784fb" : "",
+    color: router.asPath === href ? "#f1c232" : "",
   }
 
   const handleClick = (e) => {

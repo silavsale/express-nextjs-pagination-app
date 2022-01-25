@@ -1,24 +1,21 @@
 import React from "react"
-import styles from "../styles/Nav.module.css"
-import { BiCameraMovie } from "react-icons/bi"
-import { useRouter } from "next/router"
-import ActiveLink from "../components/ActiveLink"
-import Nav from "../components/Nav"
+import Nav from "../components/nav/Nav"
+import NavMobile from "../components/nav/NavMobile"
+import Movies from "../components/movies/Movies"
+import LoadingDots from "../components/LoadingDots"
 
-function Movies() {
-  const router = useRouter()
-
-  const handleClick = (e) => {
-    e.preventDefault()
-    router.push(href)
-  }
-
+function MoviesPage() {
   return (
     <div>
-      <Nav />
-      Movies
+      <div>
+        {/* <Nav />
+        <NavMobile /> */}
+      </div>
+      {/* <Movies /> */}
+      {/* <div>Movies</div> */}
+      <LoadingDots />
     </div>
   )
 }
 
-export default Movies
+export default MoviesPage
